@@ -56,8 +56,8 @@ h3 {
     font-family: bio-sans;
     font-size: var(--font-size--h3);
     color: #8931B9;
-    padding-block: 0;
-    margin-block: 0;
+    padding: 0;
+    margin: 0;
 }
 
 h4 {
@@ -87,15 +87,14 @@ p {
 }
 
 hr {
-    margin-top: -0.5em;
-    margin-bottom: -0.5em;
+    margin: -0.5em 0;
     border: 0;
     background-color: #FADAD1;
 }
 
 ul {
     list-style: none;
-    margin-block: 0.5em;
+    margin: 0.5em 0;
 }
 
 li {
@@ -126,10 +125,7 @@ button {
     font-size: 1em;
     font-weight: 300;
     border: 0;
-    padding-top: 0.25em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.25em 1em 0.5em;
     background-color: #1D8991;
     color: #FDF0ED;
     border-radius: 0;
@@ -138,14 +134,14 @@ button {
 .floating-content {
     color: #6C6F93;
     text-align: right;
-    position:absolute;
+    position: absolute;
     transform-origin: right;
     right: 16px;
 }
 
 #header {
     font-size: var(--font-size--default);
-    padding-block: 1rem;
+    padding: 1rem 0;
     background-color: #FADAD1;
     align-content: center;
 
@@ -156,9 +152,9 @@ button {
 }
 
 .header__content {
-    padding-inline: 16px;
+    padding: 0 16px;
     max-width: 1280px;
-    margin-inline: auto;
+    margin: 0 auto;
 }
 
 .header__navbar {
@@ -173,7 +169,7 @@ button {
 .header__navbar li {
     font-family: termina;
     font-size: var(--font-size--small);
-    margin-inline: 0.5rem;
+    margin: 0 0.5rem;
     display: inline-block;
     
 }
@@ -193,8 +189,7 @@ button {
     border-radius: 100%;
     width: 16em;
     float: left;
-    margin-right: 4em;
-    margin-top: 2em;
+    margin: 2em 4em 0 0;
 }
 
 #about__blurb {
@@ -203,9 +198,8 @@ button {
 
 .content {
     max-width: 1280px;
-    padding-top: var(--font-size--h1);
-    padding-bottom: 2.5rem;
-    margin-inline: 32px;
+    padding: var(--font-size--h1) 0 2.5rem;
+    margin: 0 32px;
 }
 
 .content hr {
@@ -214,14 +208,13 @@ button {
 }
 
 .footer {
-    padding-bottom: 8em;
-    padding-top: 3em;
+    padding: 3em 0 8em;
     background-color: #FADAD1;
 }
 
 .footer__content {
     max-width: 1280px;
-    padding-inline: 16px;
+    padding: 0 16px;
     font-family: bio-sans;
     font-weight: 300;
     font-size: var(--font-size--small);
@@ -260,7 +253,7 @@ button {
 
 .footer__hotlinks__socials li {
     display: inline-block;
-    margin-inline: 0.25rem;
+    margin: 0 0.25rem;
 }
 
 .footer__hotlinks img {
@@ -297,7 +290,7 @@ button {
 
     .content {
         min-width: 1280px;
-        margin-inline: auto;
+        margin: 0 auto;
     }
 
     .floating-content {
@@ -323,7 +316,7 @@ button {
     }
 
     .footer__content {
-        margin-inline: auto;
+        margin: 0 auto;
     }
     
 }
