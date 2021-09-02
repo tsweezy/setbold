@@ -12,13 +12,14 @@
 }
 
 html {
-    --color-background--primary: #FCE9E4;
+    --color-background--primary: #fff2f2;
     --color-background--secondary: #FADAD1;
     --color-background--tertiary: #FDF0ED;
 
     --color-text--default: #1A1C23;
     --color-text--highlight: #DA103F;
-    --color-text--low: #6C6F93;
+    --color-text--lowlight: #6C6F93;
+
     --color-button--default: #1D8991;
 }
 
@@ -136,7 +137,7 @@ button {
 }
 
 .floating-content {
-    color: var(--color-text--low);
+    color: var(--color-text--lowlight);
     text-align: right;
     position: absolute;
     transform-origin: right;
@@ -192,8 +193,8 @@ button {
 #profile-picture {
     border-radius: 100%;
     width: 16em;
-    float: left;
-    margin: 2em 4em 0 0;
+    display: flex;
+    margin: 2em auto 0;
 }
 
 #about__blurb {
@@ -201,7 +202,7 @@ button {
 }
 
 .content {
-    max-width: 1280px;
+    max-width: 5em;
     padding: var(--font-size--h1) 0 2.5rem;
     margin: 0 32px;
 }
@@ -293,12 +294,12 @@ button {
     }
 
     .content {
-        min-width: 1280px;
+        min-width: 50em;
         margin: 0 auto;
     }
 
     .floating-content {
-        color: var(--color-text--low);
+        color: var(--color-text--lowlight);
         text-align: right;
         position: fixed;
         position: fixed;
@@ -317,6 +318,11 @@ button {
     .floating-content:hover {
         opacity: 100%;
         transition: 0.3s;
+    }
+
+    #profile-picture {
+        float: left;
+        margin: 2em 4em 0 0;
     }
 
     .footer__content {
