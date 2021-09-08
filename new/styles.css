@@ -72,6 +72,7 @@ nav {
 
 p, li {
     font-family: neue-haas-unica, sans-serif;
+    color: var(--c-text-default);
     font-weight: 400;
     font-style: normal;
     font-size: var(--medium);
@@ -83,6 +84,11 @@ a {
     font-family: neue-haas-unica, sans-serif;
     width: fit-content;
     font-weight: 400;
+    color: var(--c-text-default);
+}
+
+a:hover:not(#navbar a) {
+    color: var(--c-strong-secondary);
 }
 
 li {
@@ -100,7 +106,6 @@ span {
 
 img {
     margin: auto;
-    padding: 1.5em 0;
     width: 100%;
 }
 
@@ -170,21 +175,17 @@ button:focus {
     bottom: 0;
 }
 
-#hero-image {
-    position: absolute;
-    width: 100%;
-    margin: auto;
-    padding: 50em;
-    background-image: url(img/me.jpg);
-}
-
 #content-wrapper {
     margin: 0 auto;
     text-align: center;
 }
 
+#content-wrapper > *:not(.whitebubble, .darkbubble) {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 #content-wrapper p:not(.grid p) {
-    max-width: 16em;
     margin: 0 auto 1.5em;
 }
 
@@ -237,16 +238,82 @@ button:focus {
     margin: 3em 0;
 }
 
+.portfolio {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.portfolio__item {
+    border-radius: 2.5em;
+    box-shadow: 0 0.25em 8px var(--c-background-tertiary);
+    background-color: var(--c-background-primary);
+}
+
+.portfolio__img {
+    object-fit: contain;
+    border-radius: 2.5em;
+    aspect-ratio: 1;
+}
+
+.portfolio__item:hover {
+    transform: translateY(0.25em);
+    transition: all 0.125s;
+}
+
+.portfolio__item:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--c-background-tertiary);
+}
+
+.portfolio__article__tech {
+    opacity: 66%;
+}
+
+.portfolio__article__img {
+    border-radius: 2.5em;
+    /* max-height: 512px; */
+    /* width: fit-content; */
+    object-fit: cover;
+}
+
+.portfolio__article__img__caption {
+    font-size: var(--small);
+    text-align: center;
+    opacity: 66%;
+}
+
+.portfolio__article__body {
+    text-align: left;
+    /* padding: 0 32px; */
+}
+
+.portfolio__article__body p {
+    max-width: 100% !important;
+}
+
+.click-zoom input[type=checkbox] {
+    display: none;
+}
+
+.click-zoom img {
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+  
+.click-zoom input[type=checkbox]:checked~img {
+    margin: 10em 0;
+    transform: scale(1.5);
+    cursor: zoom-out;
+    border-radius: 0;
+}
+
 #hero-message {
     font-weight: 700;
     font-style: normal;
     font-size: calc((90 / 16) * 1rem);
     margin: 1em 0;
-}
-
-#hamburger {
-    font-size: 2em;
-    display: none;
 }
 
 header a {
