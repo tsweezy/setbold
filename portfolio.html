@@ -1,69 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>setbold</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
   <header id="header">
-    <div class="header__content">
-      <a href="index.html">setbold.com</a>
-      <div class="header__navbar">
-        <ul>
-          <li><a href="resume.html">RESUMÉ</a></li>
-          <li><a href="portfolio.html">PORTFOLIO</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav id="navbar">
+      <a href="index.html">home</a>
+      <a href="portfolio.html" class="navbar_active">portfolio</a>
+      <!-- <a href="">blog</a> -->
+      <!-- <a href="about.html">about</a> -->
+    </nav>
   </header>
+  
+  <div id="content-wrapper">
+    <h1 class="welcome">portfolio</h1>
+    <p>A collection of my favorite projects.</p>
+    <div class="portfolio">
+      <!-- setbold.com -->
+      <a href="portfolio/setbold_com.html" class="portfolio__item">
+        <img src="img/portfolio/setbold_com/setboldv3.jpeg" alt="" class="portfolio__img">
+      </a>
 
-  <div class="content">
-    <div class="intro">
-      <h1>404</h1>
-      <p>Sorry about that! I'm still pulling together my portfolio, it should be up soon.</p>
+      <!-- stitchboard -->
+      <!-- <a href="portfolio/stitchboard.html" class="portfolio__item">
+        <img src="img/portfolio/stitchboard/stitchboard.png" alt="" class="portfolio__img">
+      </a> -->
+      
     </div>
   </div>
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__personal-info">
-        <ul>
-          <h5>MY CONTACT INFO</h5>
-          <li>Trevor Sweet</li>
-          <li>Grand Rapids, MI</li>
-        </ul>
+
+  <footer id="footer">
+    <div class="footer-grid">
+      <div id="social-icons">
+        <a href="https://github.com/tsweezy" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="GitHub profile"></a>
+        <a href="https://www.linkedin.com/in/trvr-sweet" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="LinkedIn profile"></a>
       </div>
-      <div class="footer__hotlinks">
-        <div class="footer__hotlinks__contact">
-          <ul>
-            <li><a href="mailto:trevor@setbold.com">trevor@setbold.com</a></li>
-            <li><a href="tel:+1616-558-1173">+1 (616) 558-1173</a></li>
-          </ul>
-        </div>
-        <div class="footer__hotlinks__socials">
-          <ul>
-            <li><a href="https://github.com/tsweezy"><img src="img/github.png" alt="GitHub profile"></a></li>
-            <li><a href="https://www.linkedin.com/in/trvr-sweet"><img src="img/linkedin.png" alt="LinkedIn profile"></a>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <h3>Contact</h3>
+        <p>
+          Trevor Sweet<br>
+          Grand Rapids, Michigan<br>
+          <a href="mailto:trevor@setbold.com">trevor@setbold.com</a>
+        </p>
       </div>
-      <div class="footer__navbar">
-        <ul>
-          <li><a href="resume.html">Resumé</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <div>
+        <h3>Navigate</h3>
+        <nav>
+          <a href="index.html">home</a>
+          <a href="portfolio.html">portfolio</a>
+          <!-- <a href="blog.html">blog</a> -->
+          <!-- <a href="about.html">about</a> -->
+        </nav>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

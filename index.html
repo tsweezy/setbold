@@ -1,104 +1,109 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>setbold</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
   <header id="header">
-    <div class="header__content">
-      <a href="index.html">setbold.com</a>
-      <div class="header__navbar">
-        <ul>
-          <li><a href="resume.html">RESUMÉ</a></li>
-          <li><a href="portfolio.html">PORTFOLIO</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav id="navbar">
+      <a href="index.html" class="navbar_active">home</a>
+      <a href="portfolio.html">portfolio</a>
+      <!-- <a href="">blog</a> -->
+      <!-- <a href="about.html">about</a> -->
+    </nav>
   </header>
 
-  <div class="content">
-    <article class="intro">
-      <h1>Trevor Sweet</h1>
-      <div id="intro__blurb">
-        <p>Hi, I'm Trevor! I'm a Computer Science student looking for an internship for the summer of 2021.</p>
-        <p>I have years of professional experience with the Adobe Suite and 3D art packages, rapidly growing knowledge of C++, Java, and other languages, and an eagerness to learn. </p>
+  <div id="content-wrapper">
+    <h2 class="welcome">Hi. I'm Trevor.</h2>
+    <h1>Let's make something awesome.</h1>
+
+    <div class="whitebubble">
+      <div class="whitebubble-grid">
+        <div>
+          <p>Hiring?</p>
+          <form action="resume.pdf">
+            <input type="submit" value="see my résumé"formtarget="_blank" rel="noopener noreferrer">
+          </form>
+        </div>
+        <div>
+          <p>Interested?</p>
+          <form action="#">
+            <input class="button-alt" type="submit" value="reach out to me"formtarget="_blank" rel="noopener noreferrer">
+          </form>
+        </div>
       </div>
-      <form action="/about.html">
-        <button>Email me!</button>
-      </form>
-    </article>
-    <article id="resume-preview">
-      <h1><a href="resume.html">RESUMÉ</a></h1>
-      <p>Some resumé highlights. See the full thing <a href="/resume.html">here</a>.</p>
-      <hr size="8" />
+    </div>
 
-      <section id="resume-preview__education">
-        <h2>Education</h2>
-        <h3>Bachelor of Science, Computer Science</h3>
-        <p>
-          <em>Grand Valley State University</em><br>Minor in Digital Studies
-        </p>
-        <a href="/resume.html#resume__education">View Relevant Coursework</a>
-      </section>
+    <h2>My most recent project:</h2>
+    <div class="darkbubble">
+      <div class="whitebubble-grid">
+        <div>
+          <h2>The site you're on<br>right now!</h2>
+        </div>
+        <div>
+          <p>Using pure HTML, CSS, and JavaScript,<br>I put together this little website<br>you're currently browsing.</p>
+          <form action="portfolio/setbold_com.html">
+            <input class="button-alt" type="submit" value="read the deep dive">
+          </form>
+        </div>
+      </div>
+    </div>
+    <p>I have a whole other page filled<br>with more project showcases!</p>
+    <form action="portfolio.html">
+      <input type="submit" value="see my portfolio">
+    </form>
 
-      <section id="resume-preview__experience">
-        <h2>Experience</h2>
-        <h3>Social Media Graphic Designer</h3>
-        <p>
-          <em>Grand Valley State University</em><br>Allendale, MI<br>June 2020 - Present
-        </p>
-        <h3>3D Model & Texture Artist</h3>
-        <p>
-          <em>Kent Intermediate School District</em><br>Grand Rapids, MI<br>Summer 2018
-        </p>
-      </section>
-
-      <form action="/resume.html">
-        <button>View full resume</button>
-      </form>
-    </article>
+    <h2>A bit more about me</h2>
+    <p>I've been creating all sorts of digital<br>media in many shapes and sizes for<br>more than a decade.</p>
+    <div class="whitebubble">
+      <h2>My toolbox</h2>
+      <div class=whitebubble-grid>
+        <div>
+          <h3>Art and Design</h3>
+          <p>Adobe Illustrator, Photoshop, InDesign, Experience Design, Premiere Pro, After Effects, and Procreate, Aseprite, InkScape</p>
+          <h3>Game Design</h3>
+          <p>Unity, Godot, Unreal</p>
+        </div>
+        <div>
+          <h3>Programming</h3>
+          <p>Java, C++, HTML, CSS, C, JavaScript, C#, Python</p>
+          <h3>3D Modeling</h3>
+          <p>3ds Max, Blender, Rhino, AutoCAD, ZBrush</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__personal-info">
-        <ul>
-          <h5>MY CONTACT INFO</h5>
-          <li>Trevor Sweet</li>
-          <li>Grand Rapids, MI</li>
-        </ul>
+  <footer id="footer">
+    <div class="footer-grid">
+      <div id="social-icons">
+        <a href="https://github.com/tsweezy" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="GitHub profile"></a>
+        <a href="https://www.linkedin.com/in/trvr-sweet" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="LinkedIn profile"></a>
       </div>
-      <div class="footer__hotlinks">
-        <div class="footer__hotlinks__contact">
-          <ul>
-            <li><a href="mailto:trevor@setbold.com">trevor@setbold.com</a></li>
-            <li><a href="tel:+1616-558-1173">+1 (616) 558-1173</a></li>
-          </ul>
-        </div>
-        <div class="footer__hotlinks__socials">
-          <ul>
-            <li><a href="https://github.com/tsweezy"><img src="img/github.png" alt="GitHub profile"></a></li>
-            <li><a href="https://www.linkedin.com/in/trvr-sweet"><img src="img/linkedin.png" alt="LinkedIn profile"></a>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <h3>Contact</h3>
+        <p>
+          Trevor Sweet<br>
+          Grand Rapids, Michigan<br>
+          <a href="mailto:trevor@setbold.com">trevor@setbold.com</a>
+        </p>
       </div>
-      <div class="footer__navbar">
-        <ul>
-          <li><a href="resume.html">Resumé</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <div>
+        <h3>Navigate</h3>
+        <nav>
+          <a href="index.html">home</a>
+          <a href="portfolio.html">portfolio</a>
+          <!-- <a href="blog.html">blog</a>
+          <a href="about.html">about</a> -->
+        </nav>
       </div>
     </div>
   </footer>
