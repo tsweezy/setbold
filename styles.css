@@ -38,7 +38,7 @@ h1 {
     font-family: park-lane, serif;
     font-weight: 300;
     font-style: normal;
-    font-size: var(--x-large);
+    font-size: min(15vw, var(--x-large));
     margin: 0 auto 1em;
     text-align: center;
     line-height: 0.8em;
@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-family: neue-haas-unica, sans-serif;
-    font-size: var(--large);
+    font-size: min(10vw, var(--large));
     margin: 2em auto;
     font-weight: 500;
 }
@@ -249,6 +249,8 @@ form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
+    justify-items: center;
+    align-items: center;
 }
 
 .portfolio__item {
