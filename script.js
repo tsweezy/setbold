@@ -6,7 +6,8 @@ window.addEventListener("scroll", function() {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("header").style.top = "1em";
     } else {
-        document.getElementById("header").style.top = "-10em";
+        if (currentScrollPos > 512)
+            document.getElementById("header").style.top = "-10em";
     }
     prevScrollpos = currentScrollPos;
 })
